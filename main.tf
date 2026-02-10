@@ -10,7 +10,7 @@ terraform {
 }
 
 data "aws_secretsmanager_secret" "datadog_api_key" {
-  arn = "arn:aws:secretsmanager:eu-west-1:727646359971:secret:datadog_agent_api_key"
+  arn = "arn:aws:secretsmanager:eu-west-1:727646359971:secret:datadog_digital_agent_api_key-4Qtp5Q"
 }
 
 data "aws_secretsmanager_secret_version" "datadog_api_key" {
@@ -19,7 +19,7 @@ data "aws_secretsmanager_secret_version" "datadog_api_key" {
 
 
 data "aws_secretsmanager_secret" "datadog_app_key" {
-  arn = "arn:aws:secretsmanager:eu-west-1:727646359971:secret:datadog_app_key-ouXsKB"
+  arn = "arn:aws:secretsmanager:eu-west-1:727646359971:secret:datadog_digital_app_key-p2YGnW"
 }
 
 data "aws_secretsmanager_secret_version" "datadog_app_key" {
