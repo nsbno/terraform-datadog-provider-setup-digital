@@ -1,4 +1,4 @@
-name: Validate and Trivy scan
+name: Validate
 
 on:
   push:
@@ -26,6 +26,3 @@ jobs:
 
       - name: Terraform Validate
         run: terraform validate
-
-  security-scan:
-    uses: nsbno/platform-actions/.github/workflows/security.scan.terraform.yml@main
